@@ -6,11 +6,9 @@ class Hasher
     
     while id > length -1
       hash = ALLOWED_CHARS[id % length,1].concat( hash || "" )
-      puts hash
       id = (id / length).floor
     end
 
-    puts id
     ALLOWED_CHARS[id,1].concat(hash || "")
   end
 

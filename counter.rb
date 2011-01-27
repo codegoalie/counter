@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'activerecord'
 
 require 'Hasher.rb'
 
@@ -7,5 +8,4 @@ get '/' do
 end
 
 get 'create' do
-  @o
 end
