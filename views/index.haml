@@ -1,0 +1,31 @@
+%h1{ :class => 'main_centered' } Let's get counting
+
+%form{ :id => 'create_form', :action => 'create', :method => 'post' }
+  #div{ :id => 'starting_at_box'}
+    %label{ :for => 'starting_value' } Start at:
+    %input{ :type => 'number', :id => 'starting_value', :name => 'starting_value',
+      :min  => 0 }
+
+  #div{ :id => 'direction_box' }
+    Which way?
+    %input{ :type => 'radio', :id => 'going_up', :name => 'direction', 
+      :value  => 'Up' } 
+    %label{ :for => 'going_up' } Up
+    %input{ :type => 'radio', :id => 'going_down', :name => 'direction', 
+      :value  => 'Down' }
+    %label{ :for => 'going_down' } Down
+
+  #div{ :id => 'title_box' }
+    %label{ :for => 'title'} Name your counter:
+    %input{ :type => 'text', :id => 'title', :name => 'title'}
+
+  #div{ :id => 'description_box' }
+    %label{ :for => 'description' } What's this about?
+    %textarea{ :id => 'description', :name => 'description' }
+
+  #div{ :id => 'submit_box' }
+    %input{ :type => 'submit', :value => 'Get Counting' }
+
+  
+
+
